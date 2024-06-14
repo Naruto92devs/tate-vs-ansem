@@ -1,0 +1,565 @@
+@font-face {
+    font-family: Avenir-Bold;
+    src: url(../fonts/AvenirNextLTPro-Bold.otf);
+}
+@font-face {
+    font-family: Spicy Soup;
+    src: url(../fonts/Spicy\ Soup.ttf);
+}
+@font-face {
+    font-family: comics;
+    src: url(../fonts/Master\ of\ Comics\ Personal\ Use.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+video{
+    width: 100%;
+    border-radius: 13px;
+}
+body {
+    background: #FF5C00;
+}
+img{
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+}
+p{
+    color: #fff;
+    font-family: Single Day;
+    font-size: 1.5vw;
+    font-weight: 400;
+    line-height: 110%;
+    text-align: center;
+}
+h2{
+    font-family: Spicy Soup;
+    font-size: 3.05vw;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    -webkit-text-stroke: 0.1vw #fff;
+}
+/* ---------------------header------------
+------------------------ */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5vw 7vw 5vw;
+    background: url("../images/header-bg.png")no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+.header h1{
+    font-family: Spicy Soup;
+    font-size: 2.8vw;
+    font-weight: 400;
+    line-height: 120%;
+    text-align: center;
+    color: #fff;
+    -webkit-text-stroke: 0.1vw  #000;
+}
+.header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 2vw;
+}
+.header nav .logo img{
+    width: 35%;
+}
+.header nav .social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 1.2vw;
+}
+
+.header nav .social-icons .bt:nth-of-type(1) img {
+    width: 11vw;
+}
+
+.header nav .social-icons .bt:nth-of-type(2) img {
+    width: 7vw;
+}
+
+.header nav .social-icons img{
+    width: 3.5vw;
+    transition: all .4s;
+    filter: drop-shadow(1.5vw 5vw 4vw rgba(0, 0, 0, .6));
+}
+.header nav .social-icons img:hover{
+    transform: translateY(-5px);
+}
+.header .header-heading {
+    width: 50%;
+    animation: swing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction:reverse;
+}
+.header a img{
+    width: 14vw;
+    transition: all .3s ease-in-out;
+}
+.header a img:hover {
+    transform: scale(1.1);
+}
+.header .character-1{
+    padding: 14vw 0;
+    width: 90vw;
+}
+
+.header h2 {
+    position: relative;
+    top: 2.5vw;
+}
+
+/* ---------------about-------------- */
+.about{
+    padding: 5vw 20vw;
+    position: relative;
+}
+.star-groups{
+    position: absolute;
+    width: 80%;
+    top: 5vw;
+    left: 10vw;
+}
+.about div{
+    padding: 10vw 8vw 13vw 25vw;
+    background: url(../images/about-bg.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    position: relative;
+}
+.about div .about-img{
+    position: absolute;
+    bottom: 5.4vw;
+    left: 6vw;
+    width: 29vw;
+}
+.about div .cloud{
+    position: absolute;
+    width:10vw;
+    top: -2vw;
+    left: -2vw;
+    animation: root 10s infinite linear alternate;
+}
+.about div .cloud-1{
+    position: absolute;
+    width:8vw;
+    top: 6vw;
+    right: -2vw;
+    animation: root 10s infinite alternate-reverse;
+
+}
+
+/* ------------------images------------ */
+.images{
+    padding: 5vw 10vw;
+    background: url(../images/images-bg.png)no-repeat;
+    background-position: bottom center;
+    background-size: 100% 60%;
+}
+.images .images-wrap{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 3vw;
+    justify-content: space-between;
+}
+
+.images a img {
+    width: 10vw;
+    margin-top: -3vw;
+}
+
+.images .left{
+    width: 48%;
+    text-align: center;
+}
+.images .right {
+    width: 48%;
+    text-align: center;
+}
+.images h2{
+    margin-top: 2vw;
+}
+/* -----------------------------------choose---------------- */
+.choose {
+    padding: 0vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -4vw;
+    margin-bottom: -4vw;
+}
+
+.choose img {
+    width: 100%;
+}
+
+.choose .box {
+    width: 25%;
+    padding: 2vw;
+}
+.choose .box-1{
+    background: url(../images/c-1.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 8vw 5vw 12vw 2vw;
+}
+.choose .box-1 p{
+    text-align: left;
+}
+.choose .box-2{
+    background: url(../images/c-2.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 8vw 5vw 12vw 4vw;
+    margin-left: -5vw;
+    width: 32%;
+}
+.choose .box-3{
+    background: url(../images/c-3.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 8vw 5vw 12vw 3.5vw;
+    margin-left: -5vw;
+    width: 31%;
+}
+.choose .box-4{
+    background: url(../images/c-4.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    padding: 8vw 5vw 12vw 5vw;
+    margin-left: -4vw;
+    width: 32%;
+}
+.choose .box-4 p{
+    text-align: right;
+}
+/* ---------------------------htb------------------ */
+.htb {
+    display: flex;
+    height: 112vw;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:5vw 10vw;
+    position: relative;
+    background: url(../images/htb-bg.png)no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    margin-top: -1.7vw;
+}
+
+.htb .partner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8vw;
+    position: absolute;
+    top: 5vw;
+}
+
+.htb .partner a img {
+    width: 15vw;
+}
+
+.htb .partner a:nth-of-type(3) img {
+    width: 10vw;
+}
+
+.cloud-2{
+    position: absolute;
+    width: 9vw;
+    top: 0vw;
+    left: 12vw;
+    z-index: 2;
+    animation: root 10s infinite alternate-reverse;
+
+}
+.cloud-3{
+    position: absolute;
+    width: 7vw;
+    bottom: 8vw;
+    right: 32vw;
+    z-index: 2;
+    animation: root 15s infinite alternate-reverse;
+}
+.htb h2{
+    position: absolute;
+    top: 12vw;
+}
+.htb .htb-img{
+    position: absolute;
+    width: 45vw;
+    margin-top: 5vw;
+    padding-bottom: 10vw;
+}
+.htb .box{
+    position: absolute;
+    width: 20vw;
+}
+.htb .box p{
+    color: #000;
+    text-align: left;
+}
+
+.htb .box p span {
+    font-size: 2.1vw;
+}
+
+.htb .box-1{
+    padding: 5vw 4vw 12vw 2vw;
+    left: 15vw;
+    top: 25vw;
+    background: url(../images/box-10bg.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.htb .box-2{
+    padding: 5vw 4vw 12vw 4vw;
+    right: 15vw;
+    top: 25vw;
+    background: url(../images/box-2-bg.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.htb .box-3{
+    padding: 12vw 4vw 5vw 2vw;
+    left: 15vw;
+    top: 65vw;
+    background: url(../images/box-3-bg.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+.htb .box-4{
+    padding: 12vw 0vw 5vw 4vw;
+    right: 15vw;
+    top: 63vw;
+    background: url(../images/box-4-bg.png)no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+}
+/* ----------final hulk------------ */
+
+
+img {
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.final {
+    width: 100%;
+    padding: 7vw;
+    padding-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: url(../images/final-bg.png) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    margin-top: -17.3vw;
+}
+
+.final .cloud {
+    position: absolute;
+    width: 12vw;
+    top: 0;
+    left: 0;
+    animation: root 15s infinite alternate-reverse;
+}
+
+@keyframes root {
+    from {
+        transform: translateX(0vw);
+    }
+
+    to {
+        transform: translateX(88vw);
+    }
+}
+
+.final .left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.2vw;
+    padding-top: 7vw;
+}
+
+.final .left h2 {
+    font-size: 3.5vw;
+    color: black;
+    -webkit-text-stroke: .1vw #fff;
+    line-height: 120%;
+}
+
+.final .left p {
+    font-size: 1.5vw;
+    color: white;
+    text-align: left;
+    line-height: 120%;
+}
+
+.final .right {
+    width: 37%;
+}
+
+.final .right img {
+    width: 100%;
+}
+
+/* ----------footer------------ */
+
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+    padding: 7vw 17vw;
+    position: relative;
+}
+
+footer .cloud1 {
+    position: absolute;
+    width: 12vw;
+    left: 0;
+    top: 5vw;
+    animation: root 10s infinite linear alternate;
+}
+
+footer .cloud2 {
+    position: absolute;
+    width: 10vw;
+    top: 15vw;
+    left: 0;
+    animation: root 10s infinite alternate-reverse;
+}
+
+footer .star1 {
+    position: absolute;
+    width: 2vw;
+    top: 5vw;
+    right: 27vw;
+    animation: scale 3s infinite alternate-reverse;
+}
+
+footer .star2 {
+    position: absolute;
+    width: 1.5vw;
+    top: 13vw;
+    right: 18vw;
+    animation: scale 2s infinite alternate-reverse;
+}
+
+footer .star3 {
+    position: absolute;
+    width: 3vw;
+    top: 8vw;
+    left: 13vw;
+    animation: scale 2.8s infinite alternate-reverse;
+}
+
+footer .star4 {
+    position: absolute;
+    width: 1.7vw;
+    top: 12vw;
+    left: 15vw;
+    animation: scale 3.7s infinite alternate-reverse;
+}
+
+
+footer .bg {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+}
+
+footer .stay {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: url(../images/stay-bg.png) no-repeat;
+    background-size: 100% 100%;
+    padding: 0 9vw 0vw 6vw;
+}
+
+footer .stay .left {
+    width: 35%;
+}
+
+
+footer .stay .left img {
+    width: 100%;
+    position: relative;
+    top: -3.2vw;
+}
+
+footer .stay .right {
+    width: 65%;
+    padding-bottom: 3vw;
+}
+
+
+footer .stay .right h2 {
+    font-size: 3.5vw;
+    color: black;
+    -webkit-text-stroke: .1vw #fff;
+    line-height: 120%;
+}
+
+footer .stay .right p {
+    font-size: 1.5vw;
+    color: white;
+    line-height: 120%;
+}
+
+footer p.claim {
+    text-align: center;
+    font-size: 1.7vw;
+    line-height: 120%;
+    color: #000;
+}
+
+footer .links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+}
+
+footer .links a img {
+    width: 4vw;
+    border-radius: 1.2vw;
+    box-shadow: 0 1.5vw 5vw 0vw rgba(0,0,0,.6);
+    transition: all .5s;
+}
+
+footer .links a img:hover {
+    filter: invert(100%);
+}
+
+footer ul.copy li  {
+    font-size: 1.2vw;
+    text-align: center;
+    font-family:  Spicy Soup;
+
+}
